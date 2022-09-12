@@ -2,6 +2,6 @@ name: Practice
 on: workflow_dispatch
 jobs:
  prod-check:
-  runs-on: windows-latest
+  runs-on: ubuntu-latest
   steps:
-   - run: write-host "Deploying to production server on branch $GITHUB_REF"
+   - run: echo "Deploying to production server on branch $GITHUB_REF"
