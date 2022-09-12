@@ -1,7 +1,7 @@
-namme: Practice
+name: Practice
 on: workflow_dispatch
 jobs:
  prod-check:
   runs-on: windows-latest
   steps:
-   - script: write-host "Deploying to production server on branch $GITHUB_REF"
+   - run: write-host "Deploying to production server on branch $GITHUB_REF"
